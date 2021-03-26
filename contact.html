@@ -1,0 +1,331 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>DevopTech - qeydiyyat</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="DevopTech Course" />
+	<meta name="keywords" content="DevopTech,devoptech,devoptech course,devoptech kursu,devop tech,devop-tech" />
+	<meta name="author" content="DevopTech" />
+	<meta property="og:image" content="" />
+	<meta property="og:description" content="DevopTech Kompüter Kursu" />
+	<link rel="shortcut icon" type="image/ico" href="images/favicon.png" />
+	<link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,700,800" rel="stylesheet">
+
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+
+	<!-- Magnific Popup -->
+	<link rel="stylesheet" href="css/magnific-popup.css">
+
+	<!-- Owl Carousel  -->
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="css/style.css">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+		<script src="js/respond.min.js"></script>
+		<![endif]-->
+	<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+
+</head>
+
+<body>
+
+	<div class="fh5co-loader"></div>
+
+	<div id="page">
+		<nav class="fh5co-nav" role="navigation">
+			<div class="top">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12 text-right">
+							<p class="num">Əlaqə: +994 50 982 69 93</p>
+							<ul class="fh5co-social">
+								<li><a href="https://www.facebook.com/devoptechkurs"><i class="icon-facebook"></i></a>
+								</li>
+								<li><a href="https://www.instagram.com/devoptech/"><i class="icon-instagram"></i></a>
+								</li>
+								<li><a href="https://wa.link/7u3isg"><i style="font-size: 19px;"
+											class="fa fa-whatsapp"></i></a></li>
+
+
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="top-menu">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-11 text-right menu-1">
+							<ul>
+								<li class="main active"><a href="index.html">Əsas səhifə</a></li>
+								<li class="price_menu"><a href="pricing.html">Qiymətlər</a></li>
+								<li class="register_course btn-cta"><a href="contact.html"><span>Kursa
+											qeydiyyat</span></a></li>
+							</ul>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</nav>
+
+		<header id="fh5co-header" class="fh5co-cover fh5co-cover-sm" role="banner"
+			style="background-image:url(images/scott-graham-OQMZwNd3ThU-unsplash.jpg);"
+			data-stellar-background-ratio="0.5">
+			<div class="overlay"></div>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2 text-center">
+						<div class="display-t">
+							<div class="display-tc animate-box" data-animate-effect="fadeIn">
+								<h1>Qeydiyyat</h1>
+								<h2>Qeydiyyat bölməsi üçün aşağı sürüşdürün</h2>
+								<a style="bottom: 20%;" class="ca3-scroll-down-link ca3-scroll-down-arrow"
+									data-ca3_iconfont="ETmodules" data-ca3_icon=""></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<div id="fh5co-contact">
+			<div class="container" style="position: relative;">
+				<div class="row">
+					<div class="col-md-5 col-md-push-1 animate-box">
+
+						<div class="fh5co-contact-info">
+							<h3>Əlaqə</h3>
+							<ul>
+								<li class="address">Qax</li>
+								<li class="phone"><a href="tel://+994 50 982 69 93">+994 50 982 69 93</a></li>
+								<li style="padding: 0;"><a href="tel://+994 50 982 69 93"><i class="fa fa-whatsapp" style="font-size: 20px; padding-right: 20px;"></i>+994 50 982 69 93</a></li>
+								<li class="email"><a href="mailto:devoptechaz@gmail.com">devoptechaz@gmail.com</a></li>
+								<li class="url"><a href="https://devoptech.online/">devoptech.online</a></li>
+								
+							</ul>
+							<p style="width: 70%;">*Qeydiyyat zamanı hər hansı bir problemlə rastlaşdıqda yuxarıdakı əlaqə vasitələri ilə əlaqə saxlamanız xaiş olunur</p>
+						</div>
+
+					</div>
+					<div class="col-md-6 animate-box">
+						<h3>Qeydiyyat bölməsi</h3>
+						<form action="#">
+							<div class="row form-group">
+								<div class="col-md-6">
+									<!-- <label for="fname">First Name</label> -->
+									<input type="text" id="fname" @click="name_label" class="form-control"
+										v-model="name" placeholder="Ad">
+									<label style="color: red; font-weight: 400;"
+										v-if="!(name.length ==0) && name.length <= 2">{{namelabel}}</label>
+								</div>
+								<div class="col-md-6">
+									<!-- <label for="lname">Last Name</label> -->
+									<input type="text" id="lname" @click="surname_label" class="form-control"
+										v-model="surname" placeholder="Soyad">
+									<label style="color: red; font-weight: 400;"
+										v-if="!(surname.length ==0) && surname.length <=5">{{surnamelabel}}</label>
+								</div>
+							</div>
+
+							<div class="row form-group">
+								<div class="col-md-12">
+									<!-- <label for="email">Email</label> -->
+									<input type="email" id="email" @click="email_label" class="form-control"
+										v-model="email" placeholder="Email">
+									<label style="color: red; font-weight: 400;"
+										v-if="!(email.length ==0) && email.length <=6">{{emaillabel}}</label>
+								</div>
+							</div>
+
+							<div class="row form-group">
+								<div class="col-md-12">
+									<!-- <label for="email">Email</label> -->
+									<input type="number" id="number" @click="number_label" class="form-control"
+										v-model="number" placeholder="Nömrə">
+									<label style="color: red; font-weight: 400;"
+										v-if="!(number.length == 0) && number.length <=9">{{numberlabel}}</label>
+								</div>
+							</div>
+							
+								<div class="row form-group">
+									<div class="col-md-6">
+										<!-- <label for="subject">Subject</label> -->
+										<input type="number" id="age" class="form-control" @click="age_label"
+											v-model="age" placeholder="Yaş">
+										<label style="color: red; font-weight: 400;"
+											v-if="!(age.length == 0) && age.length !== 2">{{agelabel}}</label>
+									</div>
+								
+
+								
+									<div class="col-md-6">
+										<!-- <label for="subject">Subject</label> -->
+										
+										<select @click="product_label" class="telim_select" name="cars" id="cars" v-model="product">
+											<option value="" disabled selected hidden>Məsələn qrafik dizayner</option>
+											<option value="dizayn">Qrafik dizayner</option>
+											<option value="front-end">Front - End proqramçı</option>
+											<option value="office">Microsoft Office</option>
+										</select>
+										<label style="font-weight: 400;">Təlim planını seçin : </label>
+										<label style="color: red; font-weight: 400;"
+											v-if="product.length == 0">{{productlabel}}</label>
+
+									</div>
+								</div>
+							
+							<div class="form-group">
+								<input type="submit" @click="submit" value="Qeydiyyatı göndər"
+									class="submitbtn btn btn-primary">
+								<label v-if="namecheck" style="color: red; font-weight: 400;">Bütün xanaları düzgün
+									doldurun</label>
+							</div>
+
+
+
+						</form>
+					</div>
+
+				</div>
+				<div class="aletmesaj_box">
+					<div v-if="aletmesaj" class="alertmesaj">
+						<h4 style="color: aliceblue;">Qeydiyyat istəyiniz uğurla göndərildi</h4>
+						<img style="width: 110px;"
+							src="images/pngtree-green-check-mark-icon-flat-style-png-image_1986021.png" />
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<footer id="fh5co-footer" role="contentinfo">
+			<div class="container">
+				<div class="row row-pb-md">
+					<div class="col-md-3 fh5co-widget">
+						<h4>DevopTech kursu haqqında</h4>
+						<p>DevopTech kursu, Qax rayonunda fəaliyyət göstərən, proqramlaşdırmaya və ya kompüter sahəsinə
+							həvəsi olan gənclərin inkişafı üçün yaradılan kursdur.</p>
+					</div>
+					<div class="col-md-3 col-sm-4 col-xs-6 col-md-push-1">
+						<h4>Tez keçid linkləri</h4>
+						<ul class="fh5co-footer-links">
+							<li><a href="index.html">Əsas səhifə</a></li>
+							<li><a href="contact.html">Qeydiyyat</a></li>
+							<li><a href="pricing.html">Qiymətlər</a></li>
+						</ul>
+					</div>
+
+					<div class="col-md-3 col-sm-4 col-xs-6 col-md-push-1">
+						<h4>Təlimlər</h4>
+						<ul class="fh5co-footer-links">
+							<li><a href="pricing.html">Front - End proqramçı</a></li>
+							<li><a href="pricing.html">Qrafik dizayner</a></li>
+							<li><a href="pricing.html">Microsoft Office</a></li>
+						</ul>
+					</div>
+
+					<div class="col-md-3 col-sm-4 col-xs-6 col-md-push-1">
+						<h4>Proqramlar</h4>
+						<ul class="fh5co-footer-links">
+							<li><a href="pricing.html">HTML, CSS, Bootstrap</a></li>
+							<li><a href="pricing.html">JavaScript</a></li>
+							<li><a href="pricing.html">Vue JS</a></li>
+							<li><a href="pricing.html">Adobe Photoshop</a></li>
+							<li><a href="pricing.html">Adobe Illustrator</a></li>
+							<li><a href="pricing.html">Microsoft Office</a></li>
+						</ul>
+					</div>
+
+				</div>
+
+				<div class="row copyright">
+					<div class="col-md-12 text-center">
+						<p>
+							<small class="block">&copy; 2021 DevopTech Course</small>
+						</p>
+						<p>
+							<ul class="fh5co-social-icons">
+								<li><a href="https://www.facebook.com/devoptechkurs"><i class="icon-facebook"></i></a>
+								</li>
+								<li><a href="https://www.instagram.com/devoptech/"><i class="icon-instagram"></i></a>
+								</li>
+								<li><a href="https://wa.link/7u3isg"><i style="font-size: 22px;"
+											class="fa fa-whatsapp"></i></a></li>
+							</ul>
+						</p>
+					</div>
+				</div>
+
+			</div>
+		</footer>
+	</div>
+
+	<div class="gototop js-top">
+		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
+	</div>
+
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- Stellar Parallax -->
+	<script src="js/jquery.stellar.min.js"></script>
+	<!-- Carousel -->
+	<script src="js/owl.carousel.min.js"></script>
+	<!-- countTo -->
+	<script src="js/jquery.countTo.js"></script>
+	<!-- Magnific Popup -->
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/magnific-popup-options.js"></script>
+	</script>
+	<!-- Main -->
+	<script src="js/main.js"></script>
+	<script src="js/app.js"></script>
+	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+	<body oncontextmenu="return false;"></body>
+     <script>
+        document.onkeydown = function (e) {
+            if (event.keyCode == 123) {
+                return false;
+            }
+            if (e.ctrlKey && e.shiftKey && (e.keyCode == 'I'.charCodeAt(0) || e.keyCode == 'i'.charCodeAt(0))) {
+                return false;
+            }
+            if (e.ctrlKey && e.shiftKey && (e.keyCode == 'C'.charCodeAt(0) || e.keyCode == 'c'.charCodeAt(0))) {
+                return false;
+            }
+            if (e.ctrlKey && e.shiftKey && (e.keyCode == 'J'.charCodeAt(0) || e.keyCode == 'j'.charCodeAt(0))) {
+                return false;
+            }
+            if (e.ctrlKey && (e.keyCode == 'U'.charCodeAt(0) || e.keyCode == 'u'.charCodeAt(0))) {
+                return false;
+            }
+            if (e.ctrlKey && (e.keyCode == 'S'.charCodeAt(0) || e.keyCode == 's'.charCodeAt(0))) {
+                return false;
+            }
+        }
+    </script> 
+
+</body>
+
+</html>
