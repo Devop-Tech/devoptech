@@ -7,6 +7,7 @@ const vue = new Vue({
         email : "",
         number : "",
         age : "",
+        time : new Date().getHours() + " : " + new Date().getMinutes() + "/" + new Date().getDate(),
         select_office : false,
         aletmesaj : false,
         namecheck : false,
@@ -75,7 +76,8 @@ const vue = new Vue({
                   phone : this.number,
                   mail : this.email,
                   age : this.age,
-                  product : this.product
+                  product : this.product,
+                  time : this.time
                 }
               });
             this.name = ""
