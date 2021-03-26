@@ -65,7 +65,7 @@ const vue = new Vue({
             this.aletmesaj = true
             setTimeout(function(){
                 vm.aletmesaj = false
-            },3000)
+            },4000)
             axios({
                 method: 'post',
                 url: 'https://devoptech-89c8d-default-rtdb.firebaseio.com/devoptech.json',
